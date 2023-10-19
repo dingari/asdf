@@ -1,12 +1,12 @@
 on:
   push:
     tags:
-    - '*'
+    - '*foobar*'
 
 jobs:
   asdf:
     runs-on: ubuntu-latest
     steps:
       - name: asdf
-        run: echo 'new tag created'
+        run: echo 'new foobar tag created'
 
