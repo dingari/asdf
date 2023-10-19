@@ -1,0 +1,12 @@
+on:
+  push:
+    tags:
+    - '*'
+
+jobs:
+  asdf:
+    runs-on: ubuntu-latest
+    steps:
+      - name: asdf
+        run: echo 'new tag created'
+
