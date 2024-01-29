@@ -11,5 +11,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: asdf
-        run: sh scripts.sh
+        run: sh script.sh
 
