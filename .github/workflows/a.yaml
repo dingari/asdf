@@ -13,5 +13,7 @@ jobs:
       - name: asdf
         env:
           MY_ENV_VARIABLE: "oli netti"
-        run: sh script.sh
+        run: |
+          echo $GITHUB_ENV
+          sh script.sh
 
