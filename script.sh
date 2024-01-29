@@ -1,3 +1,2 @@
 echo foobar
-echo $MY_ENV_VAR
-env
+echo $MY_ENV_VARIABLE
