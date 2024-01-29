@@ -10,8 +10,9 @@ jobs:
   asdf:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        
       - name: asdf
-        run: |
-          ls
-          sh script.sh
+        run: sh script.sh
 
