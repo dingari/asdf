@@ -1,12 +1,15 @@
 on:
   push:
-    tags:
-    - '*foobar*'
+  #   tags:
+  #   - '*foobar*'
+
+env:
+  MY_ENV_VARIABLE: "oli netti"
 
 jobs:
   asdf:
     runs-on: ubuntu-latest
     steps:
       - name: asdf
-        run: echo 'new foobar tag created'
+        run: sh scripts.sh
 
